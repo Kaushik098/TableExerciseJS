@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <script>
+    
+ //using variable   
+        //String Length
+        var a = "Linear"; 
+        console.log(a.length);
+         
+        var b = "Sequence and Random";
+        console.log(b.length);
+  
+        //indexOf
+        console.log(a.indexOf('i'));
+        console.log(b.lastIndexOf('and'));
+
+        //String toUpperCase and toLowerCase
+        var c = "AlphA"
+        console.log(c.toUpperCase());
+        console.log(c.toLowerCase());
+
+        //String to Array (sentence to words)
+        var str1 = "a,b,c,d,e";
+        var arr1 = str.split(",");   // similarly following paramaters with split works (" ", "|", etc..)
+        var str2 = "Alpha \"Beta\" \"Gamma\"";
+        var arr2 = str.split(" ");
+        console.log(arr1);
+        console.log(arr2);
+
+        //String to Array (Word to Characters)
+        var str = "word";
+        var arr = str.split("");
+        console.log(arr);
+
+//using const 
+        const a = "Latin";
+        const b = "Greek";
+        const c = " Latin was the language of Romans and Greek is the official language of Greek ";
+
+
+        //concat
+        console.log(a.concat(b));
+
+        //replace (case insensitive)
+        console.log(a.replace("Latin\i", "Romans"));
+        console.log(b.replace("Greek\i", "Greece"));
+
+       //a.) search b.)trim c.)slice, subtring, substr
+       console.log(c.seach('language')); // return 14
+       console.trim(c.trim());
+
+       console.log(c.slice(8,16));   
+       console.log(c.slice(-9,-1));
+       
+       //negative values does not work for substring
+       //substr (value, 6) - where string is 'Greek' means "Greek "  is returned
+
+    </script>
+</body>
